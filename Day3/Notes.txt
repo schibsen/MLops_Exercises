@@ -1,0 +1,23 @@
+Day 3: 
+-----------------------------------------------------------------------
+~~~~~ debugging ~~~~~ 
+NOTE: when defining the dataset path you should write at least 'datasets\\' it is important to add '\\', 
+      otherwise you will obtain an error , that is 
+	
+	FileNotFoundError: [Errno 2] No such file or directory: 'datasets\\MNIST\\raw\\train-images-idx3-ubyte.gz'
+
+
+~~~~~ cProfile ~~~~~ 
+command to run: 
+		python -m cProfile -o output_file.prof -m vae_mnist_working.py
+
+2. Try looking at the output of the profiling. Can you figure out which function took the longest to run?
+
+	---> ??? 
+
+3.  Try installing snakeviz and load a profiled run into it
+
+	---> snakeviz output_file.prof
+
+~~~~~ cProfile ~~~~~ 
+ 
